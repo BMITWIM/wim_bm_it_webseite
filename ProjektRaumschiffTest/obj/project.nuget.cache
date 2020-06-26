@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8zioV7xkiEhSYh1wAQ8zRwL5kTBeWms11EMmVDj13Z6mau1mvAULtp41GY5eUaCmSM8nq6XLHTnjEGgCwOHI1g==",
+  "dgSpecHash": "Cy4eP0Rl920OoWMcGjl/7tbHDCPL4FS03ZtSGmX/XGYKyun77A2E8WjvKVWiK9BhPH9v9rxUW3u8jHvSfDVZdQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\melissa.wilkins\\Source\\Repos\\BMITWIM\\ProjektRaumschiffTest\\ProjektRaumschiffTest.csproj",
+  "projectFilePath": "C:\\Users\\melissa.wilkins\\source\\repos\\BMITWIM\\ProjektRaumschiffTest\\ProjektRaumschiffTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\melissa.wilkins\\.nuget\\packages\\microsoft.codecoverage\\16.4.0\\microsoft.codecoverage.16.4.0.nupkg.sha512",
     "C:\\Users\\melissa.wilkins\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

@@ -4649,11 +4649,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\melissa.wilkins\\Source\\Repos\\BMITWIM\\ProjektRaumschiffTest\\ProjektRaumschiffTest.csproj",
+      "projectUniqueName": "C:\\Users\\melissa.wilkins\\source\\repos\\BMITWIM\\ProjektRaumschiffTest\\ProjektRaumschiffTest.csproj",
       "projectName": "ProjektRaumschiffTest",
-      "projectPath": "C:\\Users\\melissa.wilkins\\Source\\Repos\\BMITWIM\\ProjektRaumschiffTest\\ProjektRaumschiffTest.csproj",
+      "projectPath": "C:\\Users\\melissa.wilkins\\source\\repos\\BMITWIM\\ProjektRaumschiffTest\\ProjektRaumschiffTest.csproj",
       "packagesPath": "C:\\Users\\melissa.wilkins\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\melissa.wilkins\\Source\\Repos\\BMITWIM\\ProjektRaumschiffTest\\obj\\",
+      "outputPath": "C:\\Users\\melissa.wilkins\\source\\repos\\BMITWIM\\ProjektRaumschiffTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\melissa.wilkins\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4669,8 +4669,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\melissa.wilkins\\Source\\Repos\\BMITWIM\\ConsoleOOP\\ProjektRaumschiff\\ProjektRaumschiff.csproj": {
-              "projectPath": "C:\\Users\\melissa.wilkins\\Source\\Repos\\BMITWIM\\ConsoleOOP\\ProjektRaumschiff\\ProjektRaumschiff.csproj"
+            "C:\\Users\\melissa.wilkins\\source\\repos\\BMITWIM\\ConsoleOOP\\ProjektRaumschiff\\ProjektRaumschiff.csproj": {
+              "projectPath": "C:\\Users\\melissa.wilkins\\source\\repos\\BMITWIM\\ConsoleOOP\\ProjektRaumschiff\\ProjektRaumschiff.csproj"
             }
           }
         }
