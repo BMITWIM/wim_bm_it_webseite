@@ -1,6 +1,7 @@
 # Prerequisites
 *.d
 *.vs
+*.sln
 
 # Object files
 *.o
