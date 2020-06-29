@@ -5,7 +5,7 @@ using ProjektRaumschiff;
 
 namespace ProjektRaumschiff
 {
-    //
+    
     public class Tests
     {
         [SetUp]
