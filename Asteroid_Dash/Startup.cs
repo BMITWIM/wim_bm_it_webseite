@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace wim_bm_it_webseite
+namespace Asteroid_Dash
 {
     public class Startup
     {

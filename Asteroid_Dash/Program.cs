@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace wim_bm_it_webseite
+namespace Asteroid_Dash
 {
     public class Program
     {
