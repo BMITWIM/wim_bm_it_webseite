@@ -18,25 +18,56 @@ grid-template-areas:
   'menu main main main main main'
   'menu main main main main main'
   'menu main main main main main'
+  'menu main main main main main' 
+  'menu main main main main main'
   'menu output output output output output'
   'menu output output output output output'
   'menu input input input input input'
   'menu input input input input input'
   'footer footer footer footer footer footer';
 grid-gap: 10px;
-background-color: #2196F3;
+background-color: rgb(201, 97, 18);
 padding: 10px;
 height: 100vh;
 width: 100vw;
 }
 
+.grid-container > div {
+	background-color: black;
+	text-align: center;
+	color: white;	
+  }
+
 /* css grid item */
 
-.header { grid-area: header; }
+.header { grid-area: header;}
+
 .menu { grid-area: menu; }
 .main { grid-area: main; }
 .consoleOut { grid-area: output; }
 .consoleIn {grid-area: input;}
-.footer { grid-area: footer; }
+.footer { grid-area: footer;
+	font: arieal;
+	font-size: medium;
+	color: white;
+}
 
-   
+/* head */
+.head{
+	font: arieal;
+	font-size: medium;
+	color: white;
+}
+
+/* body */
+.body {
+	font-size: medium;
+	font: arial;
+	color: white;
+}
+.p {
+	font-size: medium;
+	font: arial;
+	color: white;
+
+}
