@@ -12,6 +12,7 @@ html, head, body, h1, h2, h3, p {
 	* {
 		box-sizing: border-box;
 	  }
+	  
 	  @media only screen and (max-width: 600px) {
 		.header {
 		  display: none;
