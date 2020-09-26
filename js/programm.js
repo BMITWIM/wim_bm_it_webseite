@@ -10,3 +10,13 @@ function displayGreeting() {
     document.getElementById("greeting").innerHTML = "Good evening!";
     }
 }
+
+function btnHamburger() {
+    var x = document.getElementById("hiddenLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      
+    } else {
+      x.style.display = "block";
+    }
+ }

@@ -5,6 +5,8 @@
 <link rel="stylesheet" href="./css/styles.css">
 <script src="js/programm.js"></script>
 
+<!-- hamburger library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body onload="displayGreeting()">
@@ -13,14 +15,19 @@
         <div class="header">
           <!-- navigation -->
           <nav>
-            <ul> 
+            <ul class="navigation">  
+              <li><a href="javascript:void(0);" class="icon" onclick="btnHamburger()">
+                <i class="fa fa-bars"></i>
+              </a></li>
+              <div id="hiddenLinks">
               <li><a href="./index.html">Text Adventure</a></li>
               <li><a href="./whatsNew.html">What's New?</a></li>
               <li><a href="./about.html">About</a></li>
+            </div>
             </ul>
           </nav>
           </div>
-        <div class="menu">Menu</div>
+        <!-- <div class="menu">Menu</div> -->
         <div class="main">
           Main 
           <p id="greeting"></p>

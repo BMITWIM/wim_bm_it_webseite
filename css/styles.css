@@ -72,15 +72,29 @@ a:link, a:visited{
 	* {
 		box-sizing: border-box;
 	  }
-/*  ---------main content text adventure -----------  */  
+/*  ---------main content text adventure -----------  */   
+/* navigation menu */
 nav{
   float: right;;
   padding-right: 2%;
+  
 }
 ul{
-  display: ruby-base;
   color: white;
+  
+  text-align: right;
   }
+
+.navigation a:hover{
+  background-color: rgb(201, 97, 18);
+  color: black;
+}
+
+.navigation #hiddenLinks{
+  display: none;
+  text-align: left;
+  
+}
 /* body design*/
 body{
   font-family: Arial;
@@ -94,16 +108,20 @@ body{
 display: grid;
 grid-template-areas:
   'header header header header header header'
-  'menu main main main main main'
-  'menu main main main main main'
-  'menu main main main main main'
-  'menu main main main main main'
-  'menu main main main main main' 
-  'menu main main main main main'
-  'menu output output output output output'
-  'menu output output output output output'
-  'menu input input input input input'
-  'menu input input input input input'
+  'main main main main main main'
+  'main main main main main main'
+  'main main main main main main'
+  'main main main main main main'
+  'main main main main main main' 
+  'main main main main main main'
+  'main main main main main main'
+  'output output output output output output'
+  'output output output output output output'
+  'output output output output output output'
+  'output output output output output output'
+  'output output output output output output'
+  'input input input input input input'
+  'input input input input input input'
   'footer footer footer footer footer footer';
 grid-gap: 10px;
 background-color: rgb(201, 97, 18);
@@ -120,6 +138,7 @@ width: 100vw;
 	color: white;	
   }
 
+  
 /* css grid item */
 
 .header { grid-area: header;}
