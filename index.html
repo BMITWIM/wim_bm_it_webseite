@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-<link rel="stylesheet" href="styles.css">
-<script src="programm.js"></script>
+<link rel="stylesheet" href="./css/styles.css">
+<script src="js/programm.js"></script>
+
 </head>
 
 <body onload="displayGreeting()">
  
     <div class="grid-container">
-        <div class="header">Header</div>
+        <div class="header">
+          <!-- navigation -->
+          <nav>
+            <ul>
+              <a href="./index.html/">Text Adventure</a>
+              <a href="./whatsNew.html/">What's New?</a>
+              <a href="./about.html/">About</a>
+            </ul>
+          </nav>
+          </div>
         <div class="menu">Menu</div>
         <div class="main">
           Main 
-          <p id="demo"></p>
+          <p id="greeting"></p>
 
         </div>  
         <div class="consoleOut">Output</div>

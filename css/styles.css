@@ -12,12 +12,7 @@ html, head, body, h1, h2, h3, p {
 	* {
 		box-sizing: border-box;
 	  }
-	  
-	  @media only screen and (max-width: 600px) {
-		.header {
-		  display: none;
-		}
-	  }
+	  	
 /*css .grid-container  */
 .grid-container {
 display: grid;
@@ -44,39 +39,16 @@ width: 100vw;
 .grid-container > div {
 	background-color: black;
 	text-align: center;
+	font-size: large;
+	font-family: Arial;
 	color: white;	
   }
 
 /* css grid item */
 
 .header { grid-area: header;}
-
 .menu { grid-area: menu; }
 .main { grid-area: main; }
 .consoleOut { grid-area: output; }
 .consoleIn {grid-area: input;}
-.footer { grid-area: footer;
-	font: arieal;
-	font-size: medium;
-	color: white;
-}
-
-/* head */
-.head{
-	font: arieal;
-	font-size: medium;
-	color: white;
-}
-
-/* body */
-.body {
-	font-size: medium;
-	font: arial;
-	color: white;
-}
-.p {
-	font-size: medium;
-	font: arial;
-	color: white;
-
-}
+.footer { grid-area: footer;}
