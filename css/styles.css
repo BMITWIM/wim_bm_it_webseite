@@ -20,7 +20,7 @@ html, head, body, h1, h2, h3, p, ul, li {
     margin-bottom: 1 em;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 40px;
+    padding-left: 0;
   }
 
 a:link, a:visited{
@@ -95,6 +95,11 @@ ul{
   text-align: left;  
 }
 
+/* Settings Text Adventure buttons*/
+.settings {
+  text-align: center;
+}
+
 /* body design*/
 body{
   font-family: Arial;
@@ -107,7 +112,7 @@ body{
 .grid-container {
 display: grid;
 grid-template-areas:
-  'header header header header header header'
+  'menu header header header header header'
   'main main main main main main'
   'main main main main main main'
   'main main main main main main'
@@ -141,12 +146,12 @@ width: 100vw;
   .grid-containerA {
     display: grid;
     grid-template-areas:
-      'header header header header header header'
-      'content-links content content content content content'
-      'content-links content content content content content'
-      'content-links content content content content content'
-      'content-links content content content content content'
-      'content-links content content content content content'
+      'content-links header header header header header'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
       'footer footer footer footer footer footer';
     grid-gap: 10px;
     background-color: rgb(201, 97, 18);
@@ -162,12 +167,10 @@ width: 100vw;
       font-family: Arial;
       color: white;	
       }
-
-  
-
   
 /* css grid item */
 .header { grid-area: header;}
+.menu {grid-area: menu;}
 .main { grid-area: main; }
 .content-links {grid-area: content-links;}
 .content{grid-area: content;}
@@ -180,6 +183,38 @@ width: 100vw;
   .navigation #hiddenLinks{
     display: ruby;
     text-align: right;        
+  }
+  /*css .grid-container for Texxt Adventure*/
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main main main main main'
+    'menu main main main main main'
+    'menu main main main main main'
+    'menu main main main main main' 
+    'menu main main main main main'
+    'menu main main main main main'
+    'menu output output output output output'
+    'menu output output output output output'
+    'menu output output output output output'
+    'menu output output output output output'
+    'menu output output output output output'
+    'menu input input input input input'
+    'menu input input input input input'
+    'footer footer footer footer footer footer';  
+  }
+
+  .grid-containerA{
+    grid-template-areas: 
+    'header header header header header header'
+      'content-links content content content content content'
+      'content-links content content content content content'
+      'content-links content content content content content'
+      'content-links content content content content content'
+      'content-links content content content content content'
+      'footer footer footer footer footer footer';
   }
 
   .icon {
