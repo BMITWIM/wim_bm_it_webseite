@@ -92,9 +92,9 @@ ul{
 
 .navigation #hiddenLinks{
   display: none;
-  text-align: left;
-  
+  text-align: left;  
 }
+
 /* body design*/
 body{
   font-family: Arial;
@@ -103,7 +103,7 @@ body{
   font-size: large;
   text-align: center;
 }
-/*css .grid-container  */
+/*css .grid-container for Texxt Adventure*/
 .grid-container {
 display: grid;
 grid-template-areas:
@@ -138,11 +138,39 @@ width: 100vw;
 	color: white;	
   }
 
+  .grid-containerA {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'content-links content content content content content'
+      'content-links content content content content content'
+      'content-links content content content content content'
+      'content-links content content content content content'
+      'content-links content content content content content'
+      'footer footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: rgb(201, 97, 18);
+    padding: 10px;
+    height: 100vh;
+    width: 100vw;
+    }
+    
+    .grid-containerA > div {
+      background-color: black;
+      text-align: center;
+      font-size: large;
+      font-family: Arial;
+      color: white;	
+      }
+
+  
+
   
 /* css grid item */
 .header { grid-area: header;}
-.menu { grid-area: menu; }
 .main { grid-area: main; }
+.content-links {grid-area: content-links;}
+.content{grid-area: content;}
 .consoleOut { grid-area: output; }
 .consoleIn {grid-area: input;}
 .footer { grid-area: footer;}
