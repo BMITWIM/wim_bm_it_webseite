@@ -26,17 +26,23 @@
             </ul>
           </nav>
       </div>           
-      <div class="menu"> 
-        Menu 
-        <br>
-        <br>
-        <ul class="settings">
-        <li><button class="newGame">New Game</button></li>
-        <li><button class="save">Save</button></li>
-        <li><button class="options">Options</button></li>
-        <li><button class="help">Help</button></li>
-      </ul>
-      </div>    
+      <div class="menu">
+        <!-- game settings -->
+
+          <ul class="settings">  
+            <li><a href="javascript:void(0);" class="icon" onclick="btnSettings()">
+              <i class="fa fa-cog"></i>
+            </a></li>
+            <div id="hiddenButtons">
+            <li><button id="newGame">New Game</button></li>
+            <li><button id="save">Save</button></li>
+            <li><button id="options">Options</button></li>
+            <li><button id="help">Help</button></li>
+            </div>
+          </ul>
+
+    </div>           
+
         <div class="main">          
           <h2> Main </h2>
           <p id="greeting"></p>

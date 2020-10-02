@@ -20,3 +20,13 @@ function btnHamburger() {
       x.style.display = "block";
     }
  }
+
+ function btnSettings(){
+   var x = document.getElementById("hiddenButtons");
+   if (x.style.display === "block") {
+    x.style.display = "none";
+    
+  } else {
+    x.style.display = "block";
+  }
+ }

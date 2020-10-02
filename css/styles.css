@@ -76,7 +76,7 @@ a:link, a:visited{
 
 /* navigation menu */
 nav{
-  float: right;;
+  float: right;
   padding-right: 2%;
   
 }
@@ -96,9 +96,17 @@ ul{
 }
 
 /* Settings Text Adventure buttons*/
+
 .settings {
   text-align: center;
+  
 }
+
+.settings #hiddenButtons {
+  display: none;
+
+}
+
 
 /* body design*/
 body{
