@@ -6,7 +6,7 @@ function displayGreeting() {
     }
     if(d.getHours() < 19 && d.getHours() >= 12){
         document.getElementById("greeting").innerHTML = "Good afternoon!"
-    } if (d.getHours() <= 23 && d.getHours() >= 19) {
+    } /* if (d.getHours() <= 23 && d.getHours() >= 19) */ else {
     document.getElementById("greeting").innerHTML = "Good evening!";
     }
 }

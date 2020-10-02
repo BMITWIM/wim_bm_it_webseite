@@ -95,11 +95,20 @@ ul{
   text-align: left;  
 }
 
+.icon {
+  padding: 10px;
+}
+
 /* Settings Text Adventure buttons*/
 
 .settings {
   text-align: center;
   
+}
+
+.settings a:hover{
+  background-color: rgb(201, 97, 18);
+  color: black;
 }
 
 .settings #hiddenButtons {
@@ -160,6 +169,17 @@ width: 100vw;
       'content content content content content content'
       'content content content content content content'
       'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
       'footer footer footer footer footer footer';
     grid-gap: 10px;
     background-color: rgb(201, 97, 18);
@@ -180,7 +200,10 @@ width: 100vw;
 .header { grid-area: header;}
 .menu {grid-area: menu;}
 .main { grid-area: main; }
-.content-links {grid-area: content-links;}
+.content-links {grid-area: content-links;
+              /* position: absolute;
+            left: 10px;
+            top: 10px; */}
 .content{grid-area: content;}
 .consoleOut { grid-area: output; }
 .consoleIn {grid-area: input;}
