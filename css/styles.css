@@ -150,6 +150,7 @@ width: 100vw;
 	font-family: Arial;
 	color: white;	
   }
+/* grid container on about page */
 
   .grid-containerA {
     display: grid;
@@ -176,12 +177,52 @@ width: 100vw;
       color: white;	
       }
   
+    /* grid container on What's new page */
+.grid-containerW {
+  display: grid;
+  grid-gap: 10px;
+  background-color: rgb(201, 97, 18);
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  grid-template-areas: 
+  'header header header header header header'
+  'welcome welcome welcome welcome welcome welcome'
+  'welcome welcome welcome welcome welcome welcome'
+  'welcome welcome welcome welcome welcome welcome'
+  'welcome welcome welcome welcome welcome welcome'
+  'news news news news news news'
+  'news news news news news news'
+  'news news news news news news'
+  'news news news news news news'
+  'release release release release release release'
+  'release release release release release release'
+  'release release release release release release'
+  'release release release release release release'
+  'footer footer footer footer footer footer'
+  ;
+}
+
+.grid-containerW > div {
+  background-color: black;
+  text-align: center;
+  font-size: large;
+  font-family: Arial;
+  color: white;	
+  }
+.grid-containerW .welcome, .grid-containerW .release {
+  background-color: inherit;
+}
+
 /* css grid item */
 .header { grid-area: header;}
 .menu {grid-area: menu;}
 .main { grid-area: main; }
 .content-links {grid-area: content-links;}
 .content{grid-area: content;}
+.welcome{grid-area: welcome;}
+.news{grid-area: news;}
+.release{grid-area: release;}
 .consoleOut { grid-area: output; }
 .consoleIn {grid-area: input;}
 .footer { grid-area: footer;}
@@ -190,7 +231,11 @@ width: 100vw;
 @media only screen and (min-width: 768px) {
   .navigation #hiddenLinks{
     display: ruby;
-    text-align: right;        
+    text-align: right;  
+    }
+
+  .settings #hiddenButtons{
+    display: block;
   }
   /*css .grid-container for Texxt Adventure*/
 .grid-container {
