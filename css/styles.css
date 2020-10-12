@@ -13,20 +13,21 @@ html, head, body, h1, h2, h3, p, ul, li {
     display: block;
   }
 
-  ul, li {
+  ul {
     display: block;
-    list-style-type: none;
+    list-style-type: disc;
     margin-top: 1em;
     margin-bottom: 1 em;
     margin-left: 0;
     margin-right: 0;
     padding-left: 0;
+    text-align: left;
   }
 
 a:link, a:visited{
-  color: white;
-  text-decoration: none;
-  cursor: auto;
+  color: (internal value);
+  text-decoration: underline;
+  cursor: pointer;
 }
 /* reset headings h1-h4 */
     h1 {
@@ -79,34 +80,44 @@ nav{
   float: right;
   padding-right: 2%;
   
+  
 }
-ul{
+ul.navigation{
   color: white;
+  list-style-type: none;
   text-align: right;
   }
+
+.navigation a:link, .navigation a:visited{
+  color: white;
+  text-decoration: none;
+  cursor: auto;
+}
+
 
 .navigation a:hover{
   background-color: rgb(201, 97, 18);
   color: black;
 }
 
-.navigation #hiddenLinks{
+.navigation #hiddenLinks, .navigation #hiddenButtons{
   display: none;
   text-align: left;  
 }
 
+.navigation #hiddenButtons {
+  text-align: center;
+}
+
 /* Settings Text Adventure buttons*/
 
-.settings {
+#settings {
   text-align: center;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
   
 }
-
-.settings #hiddenButtons {
-  display: none;
-
-}
-
 
 /* body design*/
 body{
@@ -116,6 +127,7 @@ body{
   font-size: large;
   text-align: center;
 }
+
 /*css .grid-container for Texxt Adventure*/
 .grid-container {
 display: grid;
@@ -231,12 +243,14 @@ width: 100vw;
 @media only screen and (min-width: 768px) {
   .navigation #hiddenLinks{
     display: ruby;
-    text-align: right;  
+    text-align: right;      
     }
 
-  .settings #hiddenButtons{
+  .navigation #hiddenButtons{
     display: block;
   }
+
+
   /*css .grid-container for Texxt Adventure*/
 .grid-container {
   display: grid;
@@ -268,6 +282,10 @@ width: 100vw;
       'content-links content content content content content'
       'content-links content content content content content'
       'footer footer footer footer footer footer';
+  }
+
+  ul {
+    padding-left: 25%;
   }
 
   .icon {
