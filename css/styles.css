@@ -119,14 +119,6 @@ ul.navigation{
   
 }
 
-/* body design*/
-body{
-  font-family: Arial;
-  color: white;
-  background-color: black;
-  font-size: large;
-  text-align: center;
-}
 
 /*css .grid-container general */
 .grid-container {
@@ -215,6 +207,10 @@ width: 100vw;
 .consoleIn {grid-area: input;}
 .footer { grid-area: footer;}
 
+.bullet-list{
+  padding-left: 10%;
+}
+
 /* @media for desktop and tablet users */
 @media only screen and (min-width: 768px) {
   .navigation #hiddenLinks{
@@ -259,8 +255,8 @@ width: 100vw;
       'footer footer footer footer footer footer';
   }
 
-  ul {
-    padding-left: 25%;
+  .bullet-list {
+    padding-left: 30%;
   }
 
   .icon {
