@@ -128,26 +128,9 @@ body{
   text-align: center;
 }
 
-/*css .grid-container for Texxt Adventure*/
+/*css .grid-container general */
 .grid-container {
 display: grid;
-grid-template-areas:
-  'menu header header header header header'
-  'main main main main main main'
-  'main main main main main main'
-  'main main main main main main'
-  'main main main main main main'
-  'main main main main main main' 
-  'main main main main main main'
-  'main main main main main main'
-  'output output output output output output'
-  'output output output output output output'
-  'output output output output output output'
-  'output output output output output output'
-  'output output output output output output'
-  'input input input input input input'
-  'input input input input input input'
-  'footer footer footer footer footer footer';
 grid-gap: 10px;
 background-color: rgb(201, 97, 18);
 padding: 10px;
@@ -162,10 +145,29 @@ width: 100vw;
 	font-family: Arial;
 	color: white;	
   }
-/* grid container on about page */
 
-  .grid-containerA {
-    display: grid;
+  /* css grid layout Text adventure page */
+  #adventure-layout {grid-template-areas:
+    'menu header header header header header'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main' 
+    'main main main main main main'
+    'main main main main main main'
+    'output output output output output output'
+    'output output output output output output'
+    'output output output output output output'
+    'output output output output output output'
+    'output output output output output output'
+    'input input input input input input'
+    'input input input input input input'
+    'footer footer footer footer footer footer';
+  }
+/* css grid layout on about page */
+
+#documentation-layout {
     grid-template-areas:
       'content-links header header header header header'
       'content content content content content content'
@@ -174,29 +176,10 @@ width: 100vw;
       'content content content content content content'
       'content content content content content content'
       'footer footer footer footer footer footer';
-    grid-gap: 10px;
-    background-color: rgb(201, 97, 18);
-    padding: 10px;
-    height: 100vh;
-    width: 100vw;
     }
-    
-    .grid-containerA > div {
-      background-color: black;
-      text-align: center;
-      font-size: large;
-      font-family: Arial;
-      color: white;	
-      }
   
-    /* grid container on What's new page */
-.grid-containerW {
-  display: grid;
-  grid-gap: 10px;
-  background-color: rgb(201, 97, 18);
-  padding: 0;
-  height: 100vh;
-  width: 100vw;
+    /* css grid layout  on What's new page */
+#blog-layout {
   grid-template-areas: 
   'header header header header header header'
   'welcome welcome welcome welcome welcome welcome'
@@ -215,15 +198,8 @@ width: 100vw;
   ;
 }
 
-.grid-containerW > div {
-  background-color: black;
-  text-align: center;
-  font-size: large;
-  font-family: Arial;
-  color: white;	
-  }
-.grid-containerW .welcome, .grid-containerW .release {
-  background-color: inherit;
+.grid-container .welcome, .grid-container .release {
+  background-color: rgb(201, 97, 18);
 }
 
 /* css grid item */
@@ -252,8 +228,7 @@ width: 100vw;
 
 
   /*css .grid-container for Texxt Adventure*/
-.grid-container {
-  display: grid;
+#adventure-layout {
   grid-template-areas:
     'header header header header header header'
     'menu main main main main main'
@@ -273,7 +248,7 @@ width: 100vw;
     'footer footer footer footer footer footer';  
   }
 
-  .grid-containerA{
+  #documentation-layout{
     grid-template-areas: 
     'header header header header header header'
       'content-links content content content content content'
