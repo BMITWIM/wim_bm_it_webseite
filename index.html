@@ -1,22 +1,56 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-<link rel="stylesheet" href="styles.css">
-<script src="programm.js"></script>
+<link rel="stylesheet" href="./css/styles.css">
+<script src="js/programm.js"></script>
+<!-- icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="displayGreeting()">
  
-    <div class="grid-container">
-        <div class="header">Header</div>
-        <div class="menu">Menu</div>
-        <div class="main">Main</div>  
+    <div class="grid-container" id="adventure-layout">
+      <div class="header">
+          <!-- navigation -->
+          <nav>
+            <ul class="navigation">  
+              <li><a href="javascript:void(0);" class="icon" onclick="btnHamburger()">
+                <i class="fa fa-bars"></i>
+              </a></li>
+              <div id="hiddenLinks">
+              <li><a href="./index.html">Text Adventure</a></li>
+              <li><a href="./what'sNew.html">What's New?</a></li>
+              <li><a href="./about.html">About</a></li>
+              </div>
+            </ul>
+          </nav>
+      </div>           
+      <div class="menu">
+        <!-- game settings -->
+
+          <ul class="navigation" id="settings">  
+            <li><a href="javascript:void(0);" class="icon" onclick="btnSettings()">
+              <i class="fa fa-cog"></i>
+            </a></li>
+            <div id="hiddenButtons">
+            <li><button id="newGame">New Game</button></li>
+            <li><button id="save">Save</button></li>
+            <li><button id="options">Options</button></li>
+            <li><button id="help">Help</button></li>
+            </div>
+          </ul>
+
+    </div>           
+
+        <div class="main">          
+          <h2> Main </h2>
+          <p id="greeting"></p>
+        </div>  
         <div class="consoleOut">Output</div>
         <div class="consoleIn">Input</div>
         <div class="footer">Footer</div>
-      </div> 
-
+    </div>
 
 </body>
 </html>
