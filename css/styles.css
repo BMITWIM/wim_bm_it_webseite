@@ -223,20 +223,18 @@ li.bullet-list{
 /* @media for desktop and tablet users */
 @media only screen and (min-width: 768px) {
   ul.navigation #hiddenLinks{
-    display: block; 
-    
-    
+    display: block;    
     }
+
   li.navigation  {
-    float: left;
-    
+    float: left;    
   }
 
  li a {
   padding: 15px 20px; 
-  display: block;
- 
+  display: block; 
   } 
+
 
   .navigation #hiddenButtons{
     display: block;
