@@ -6,13 +6,13 @@ function displayGreeting() {
     }
     if(d.getHours() < 19 && d.getHours() >= 12){
         document.getElementById("greeting").innerHTML = "Good afternoon!"
-    } /* if (d.getHours() <= 23 && d.getHours() >= 19) */ else {
+    } if (d.getHours() <= 23 && d.getHours() >= 19) {
     document.getElementById("greeting").innerHTML = "Good evening!";
     }
 }
 
 function btnHamburger() {
-    var x = document.getElementById("hiddenLinks");
+    var x = document.getElementById("hiddenLinks");   
     if (x.style.display === "block") {
       x.style.display = "none";
       
@@ -30,3 +30,14 @@ function btnHamburger() {
     x.style.display = "block";
   }
  }
+
+ function btnLinks() {
+  var x = document.getElementById("hiddenContent-Links");   
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    
+  } else {
+    x.style.display = "block";
+  }
+ }
+

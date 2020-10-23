@@ -85,7 +85,6 @@ nav{
 ul.navigation{
   color: white;
   list-style-type: none;
-  
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -106,6 +105,11 @@ ul.navigation{
 
 
 .navigation #hiddenLinks {
+  display: none;
+  text-align: left;  
+}
+
+.navigation #hiddenContent-Links {
   display: none;
   text-align: left;  
 }
@@ -177,13 +181,6 @@ width: 100vw;
       'content content content content content content'
       'content content content content content content'
       'content content content content content content'
-<<<<<<< HEAD
-      'content content content content content content'
-      'content content content content content content'
-      'content content content content content content'
-      'content content content content content content'
-=======
->>>>>>> hotfic/navigation
       'footer footer footer footer footer footer';
     }
   
@@ -215,10 +212,7 @@ width: 100vw;
 .header { grid-area: header;}
 .menu {grid-area: menu;}
 .main { grid-area: main; }
-.content-links {grid-area: content-links;
-              /* position: absolute;
-            left: 10px;
-            top: 10px; */}
+.content-links {grid-area: content-links;}
 .content{grid-area: content;}
 .welcome{grid-area: welcome;}
 .news{grid-area: news;}
@@ -234,20 +228,18 @@ li.bullet-list{
 /* @media for desktop and tablet users */
 @media only screen and (min-width: 768px) {
   ul.navigation #hiddenLinks{
-    display: block; 
-    
-    
+    display: block;    
     }
+
   li.navigation  {
-    float: left;
-    
+    float: left;    
   }
 
  li a {
   padding: 15px 20px; 
-  display: block;
- 
+  display: block; 
   } 
+
 
   .navigation #hiddenButtons{
     display: block;
@@ -294,7 +286,6 @@ div.content-links ul.navigation li{
   .bullet-list {
     padding-left: 30%;
   }
-
   .icon {
     display: none;
   }
