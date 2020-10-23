@@ -170,7 +170,7 @@ width: 100vw;
       'footer footer footer footer footer footer';
     }
   
-    /* css grid layout  on What's new page */
+/* css grid layout  on What's new page */
 #blog-layout {
   grid-template-areas: 
   'header header header header header header'
