@@ -103,6 +103,7 @@ ul.navigation{
   color: black;
 }
 
+
 .navigation #hiddenLinks {
   display: none;
   text-align: left;  
@@ -118,6 +119,7 @@ ul.navigation{
 #settings {
   text-align: center;  
 }
+
 
 
 /*css .grid-container general */
@@ -177,7 +179,7 @@ width: 100vw;
       'footer footer footer footer footer footer';
     }
   
-/* css grid layout  on What's new page */
+/* css grid layout on What's new page */
 #blog-layout {
   grid-template-areas: 
   'header header header header header header'
@@ -231,13 +233,20 @@ li.bullet-list{
   }
 
  li a {
-  padding: 15px 20px;  
+  padding: 15px 20px; 
+  display: block;
+ 
   } 
 
   .navigation #hiddenButtons{
     display: block;
   }
 
+/* .content-links About page */
+div.content-links ul.navigation li{
+  float: none;
+  
+}
 
   /*css .grid-container for Texxt Adventure*/
 #adventure-layout {
