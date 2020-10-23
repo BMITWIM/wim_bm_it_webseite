@@ -85,6 +85,9 @@ nav{
 ul.navigation{
   color: white;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   text-align: right;
   }
 
@@ -100,23 +103,20 @@ ul.navigation{
   color: black;
 }
 
-.navigation #hiddenLinks, .navigation #hiddenButtons{
+.navigation #hiddenLinks {
   display: none;
   text-align: left;  
 }
 
 .navigation #hiddenButtons {
+  display: none;
   text-align: center;
 }
 
 /* Settings Text Adventure buttons*/
 
 #settings {
-  text-align: center;
-  list-style-type: none;
-  margin-left: 0;
-  padding-left: 0;
-  
+  text-align: center;  
 }
 
 
@@ -167,6 +167,13 @@ width: 100vw;
       'content content content content content content'
       'content content content content content content'
       'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
       'footer footer footer footer footer footer';
     }
   
@@ -207,16 +214,25 @@ width: 100vw;
 .consoleIn {grid-area: input;}
 .footer { grid-area: footer;}
 
-.bullet-list{
+li.bullet-list{
   padding-left: 10%;
 }
 
 /* @media for desktop and tablet users */
 @media only screen and (min-width: 768px) {
-  .navigation #hiddenLinks{
-    display: ruby;
-    text-align: right;      
+  ul.navigation #hiddenLinks{
+    display: block; 
+    
+    
     }
+  li.navigation  {
+    float: left;
+    
+  }
+
+ li a {
+  padding: 15px 20px;  
+  } 
 
   .navigation #hiddenButtons{
     display: block;
