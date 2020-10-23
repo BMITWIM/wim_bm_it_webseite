@@ -4,13 +4,13 @@
 <head>
 <link rel="stylesheet" href="./css/styles.css">
 <script src="js/programm.js"></script>
-<!-- hamburger library -->
+<!-- icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body onload="displayGreeting()">
  
-    <div class="grid-container">
+    <div class="grid-container" id="adventure-layout">
       <div class="header">
           <!-- navigation -->
           <nav>
@@ -20,7 +20,7 @@
               </a></li>
               <div id="hiddenLinks">
               <li><a href="./index.html">Text Adventure</a></li>
-              <li><a href="./whatsNew.html">What's New?</a></li>
+              <li><a href="./what'sNew.html">What's New?</a></li>
               <li><a href="./about.html">About</a></li>
               </div>
             </ul>
@@ -29,7 +29,7 @@
       <div class="menu">
         <!-- game settings -->
 
-          <ul class="settings">  
+          <ul class="navigation" id="settings">  
             <li><a href="javascript:void(0);" class="icon" onclick="btnSettings()">
               <i class="fa fa-cog"></i>
             </a></li>

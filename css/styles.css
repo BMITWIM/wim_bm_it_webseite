@@ -13,20 +13,21 @@ html, head, body, h1, h2, h3, p, ul, li {
     display: block;
   }
 
-  ul, li {
+  ul {
     display: block;
-    list-style-type: none;
+    list-style-type: disc;
     margin-top: 1em;
     margin-bottom: 1 em;
     margin-left: 0;
     margin-right: 0;
     padding-left: 0;
+    text-align: left;
   }
 
 a:link, a:visited{
-  color: white;
-  text-decoration: none;
-  cursor: auto;
+  color: (internal value);
+  text-decoration: underline;
+  cursor: pointer;
 }
 /* reset headings h1-h4 */
     h1 {
@@ -79,72 +80,49 @@ nav{
   float: right;
   padding-right: 2%;
   
+  
 }
-ul{
+ul.navigation{
   color: white;
+  list-style-type: none;
   text-align: right;
   }
+
+.navigation a:link, .navigation a:visited{
+  color: white;
+  text-decoration: none;
+  cursor: auto;
+}
+
 
 .navigation a:hover{
   background-color: rgb(201, 97, 18);
   color: black;
 }
 
-.navigation #hiddenLinks{
+.navigation #hiddenLinks, .navigation #hiddenButtons{
   display: none;
   text-align: left;  
 }
 
-.icon {
-  padding: 10px;
+.navigation #hiddenButtons {
+  text-align: center;
 }
 
 /* Settings Text Adventure buttons*/
 
-.settings {
+#settings {
   text-align: center;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
   
 }
 
-.settings a:hover{
-  background-color: rgb(201, 97, 18);
-  color: black;
-}
 
-.settings #hiddenButtons {
-  display: none;
-
-}
-
-
-/* body design*/
-body{
-  font-family: Arial;
-  color: white;
-  background-color: black;
-  font-size: large;
-  text-align: center;
-}
-/*css .grid-container for Texxt Adventure*/
+/*css .grid-container general */
 .grid-container {
 display: grid;
-grid-template-areas:
-  'menu header header header header header'
-  'main main main main main main'
-  'main main main main main main'
-  'main main main main main main'
-  'main main main main main main'
-  'main main main main main main' 
-  'main main main main main main'
-  'main main main main main main'
-  'output output output output output output'
-  'output output output output output output'
-  'output output output output output output'
-  'output output output output output output'
-  'output output output output output output'
-  'input input input input input input'
-  'input input input input input input'
-  'footer footer footer footer footer footer';
 grid-gap: 10px;
 background-color: rgb(201, 97, 18);
 padding: 10px;
@@ -160,8 +138,28 @@ width: 100vw;
 	color: white;	
   }
 
-  .grid-containerA {
-    display: grid;
+  /* css grid layout Text adventure page */
+  #adventure-layout {grid-template-areas:
+    'menu header header header header header'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main' 
+    'main main main main main main'
+    'main main main main main main'
+    'output output output output output output'
+    'output output output output output output'
+    'output output output output output output'
+    'output output output output output output'
+    'output output output output output output'
+    'input input input input input input'
+    'input input input input input input'
+    'footer footer footer footer footer footer';
+  }
+/* css grid layout on about page */
+
+#documentation-layout {
     grid-template-areas:
       'content-links header header header header header'
       'content content content content content content'
@@ -181,21 +179,32 @@ width: 100vw;
       'content content content content content content'
       'content content content content content content'
       'footer footer footer footer footer footer';
-    grid-gap: 10px;
-    background-color: rgb(201, 97, 18);
-    padding: 10px;
-    height: 100vh;
-    width: 100vw;
     }
-    
-    .grid-containerA > div {
-      background-color: black;
-      text-align: center;
-      font-size: large;
-      font-family: Arial;
-      color: white;	
-      }
   
+    /* css grid layout  on What's new page */
+#blog-layout {
+  grid-template-areas: 
+  'header header header header header header'
+  'welcome welcome welcome welcome welcome welcome'
+  'welcome welcome welcome welcome welcome welcome'
+  'welcome welcome welcome welcome welcome welcome'
+  'welcome welcome welcome welcome welcome welcome'
+  'news news news news news news'
+  'news news news news news news'
+  'news news news news news news'
+  'news news news news news news'
+  'release release release release release release'
+  'release release release release release release'
+  'release release release release release release'
+  'release release release release release release'
+  'footer footer footer footer footer footer'
+  ;
+}
+
+.grid-container .welcome, .grid-container .release {
+  background-color: rgb(201, 97, 18);
+}
+
 /* css grid item */
 .header { grid-area: header;}
 .menu {grid-area: menu;}
@@ -205,19 +214,31 @@ width: 100vw;
             left: 10px;
             top: 10px; */}
 .content{grid-area: content;}
+.welcome{grid-area: welcome;}
+.news{grid-area: news;}
+.release{grid-area: release;}
 .consoleOut { grid-area: output; }
 .consoleIn {grid-area: input;}
 .footer { grid-area: footer;}
+
+.bullet-list{
+  padding-left: 10%;
+}
 
 /* @media for desktop and tablet users */
 @media only screen and (min-width: 768px) {
   .navigation #hiddenLinks{
     display: ruby;
-    text-align: right;        
+    text-align: right;      
+    }
+
+  .navigation #hiddenButtons{
+    display: block;
   }
+
+
   /*css .grid-container for Texxt Adventure*/
-.grid-container {
-  display: grid;
+#adventure-layout {
   grid-template-areas:
     'header header header header header header'
     'menu main main main main main'
@@ -237,7 +258,7 @@ width: 100vw;
     'footer footer footer footer footer footer';  
   }
 
-  .grid-containerA{
+  #documentation-layout{
     grid-template-areas: 
     'header header header header header header'
       'content-links content content content content content'
@@ -246,6 +267,10 @@ width: 100vw;
       'content-links content content content content content'
       'content-links content content content content content'
       'footer footer footer footer footer footer';
+  }
+
+  .bullet-list {
+    padding-left: 30%;
   }
 
   .icon {
