@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
 <head>
+  <!-- meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive Text Adventure "> 
+  <meta name="author" content="Melissa Wilkins "> 
+  <meta name="robots" content="index, follow">
+  <!-- end meta Tags -->
+  
 <link rel="stylesheet" href="./css/styles.css">
 <script src="js/programm.js"></script>
 <!-- icon library -->
@@ -11,45 +20,50 @@
 <body onload="displayGreeting()">
  
     <div class="grid-container" id="adventure-layout">
-      <div class="header">
+      <header class="header">
           <!-- navigation -->
           <nav>
             <ul class="navigation">  
               <li><a href="javascript:void(0);" class="icon" onclick="btnHamburger()">
                 <i class="fa fa-bars"></i>
               </a></li>
-              <div id="hiddenLinks">
+              <li id="hiddenLinks">
+                <ul>
               <li><a href="./index.html">Text Adventure</a></li>
               <li><a href="./pages/what'sNew.html">What's New?</a></li>
               <li><a href="./pages/about.html">About</a></li>
-              </div>
+            </ul>
+            </li>
             </ul>
           </nav>
-      </div>           
-      <div class="menu">
+        </header>           
+      <nav classs="menu">
         <!-- game settings -->
 
           <ul class="navigation" id="settings">  
             <li><a href="javascript:void(0);" class="icon" onclick="btnSettings()">
               <i class="fa fa-cog"></i>
             </a></li>
-            <div id="hiddenButtons">
+            <li id="hiddenButtons">
+              <ul>
             <li><button id="newGame">New Game</button></li>
             <li><button id="save">Save</button></li>
             <li><button id="options">Options</button></li>
             <li><button id="help">Help</button></li>
-            </div>
           </ul>
+          </li>
+          </ul>
+        </nav>           
 
-    </div>           
-
-        <div class="main">          
+        <main class="main">          
+          <section>
           <h2> Main </h2>
           <p id="greeting"></p>
-        </div>  
-        <div class="consoleOut">Output</div>
-        <div class="consoleIn">Input</div>
-        <div class="footer">Footer</div>
+        </section>
+        <section class="consoleOut">Output</section>
+        <section class="consoleIn">Input</section>
+      </main>
+        <footer class="footer">Footer</footer>
     </div>
     
 
