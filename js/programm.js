@@ -12,7 +12,7 @@ function displayGreeting() {
 }
 
 function btnHamburger() {
-    var x = document.getElementById("hiddenLinks");
+    var x = document.getElementById("hiddenLinks");   
     if (x.style.display === "block") {
       x.style.display = "none";
       
@@ -30,3 +30,14 @@ function btnHamburger() {
     x.style.display = "block";
   }
  }
+
+ function btnLinks() {
+  var x = document.getElementById("hiddenContent-Links");   
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    
+  } else {
+    x.style.display = "block";
+  }
+ }
+

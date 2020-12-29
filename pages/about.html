@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
+<<<<<<< HEAD:pages/about.html
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/programm.js"></script>
     <!-- hamburger library -->
@@ -27,24 +28,62 @@
     <ul class="navigation">    <li><a href="#1">What is project wim?</a> </li>
     <li><a href="#thanks">Special Thanks</a> </li>
   </ul>
+=======
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./css/styles.css">
+<script src="js/programm.js"></script>
+>>>>>>> 121b4c6dc50fb02db8af7e36208249cd723bd380:about.html
 
+<title>wim - About</title>
 
-  </div>
-  <div class="content">
-  <article>
-    <h3 id="what">What is project wim?</h3>
-    <p>Simply put, project wim is tasked with the maintenance 
-      of this web domain. It is a student lead project. <br> As such, 
-      the website should present the skills of an aspiring software engineer. 
-      The project domain was provided by the ESPAS. </p>
-    <br>
-    <h3 id="thanks">Special Thanks</h3>
-    <p>If you have made it this far then I thank you for taking 
-        time out of your day to go through a simple website.     
-    </p>
-  </article>
+<!-- icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-  </div>
-  <div class="footer">footer</div>
+<body> 
+    <div class="grid-container" id="documentation-layout">
+      <div class="header">
+          <!-- navigation -->
+          <nav>
+            <ul class="navigation">  
+              <li class="navigation"><a href="javascript:void(0);" class="icon" onclick="btnHamburger()">
+                <i class="fa fa-bars"></i>
+              </a></li>
+              <div id="hiddenLinks">
+              <li class="navigation"><a href="./index.html">Text Adventure</a></li>
+              <li class="navigation"><a href="./what'sNew.html">What's New?</a></li>
+              <li class="navigation"><a href="./about.html">About</a></li>
+              </div>
+            </ul>
+          </nav>
+      </div>           
+      <div class="content-links">
+        <ul class="navigation">   
+          <li class="navigation"><a href="javascript:void(0);" class="icon" onclick="btnLinks()">
+            <i class="fa fa-bars"></i>
+          </a></li>
+          <div id="hiddenContent-Links"> 
+          <li class="navigation"><a href="#1">What is project wim?</a> </li>
+          <li class="navigation"><a href="#thanks">Special Thanks</a> </li>
+          </div>
+        </ul>      
+    </div>           
+   
+        <div class="content">          
+          <h3 id="what">What is project wim?</h3>
+          <p>Simply put, project wim is tasked with the maintenance 
+          of this web domain. It is a student lead project. <br> As such, 
+          the website should present the skills of an aspiring software engineer. 
+          The project domain was provided by the ESPAS. </p>
+          <br>
+          <h3 id="thanks">Special Thanks</h3>
+          <p>If you have made it this far then I thank you for taking 
+          time out of your day to go through a simple website.     
+          </p>
+        </div>  
+        <div class="footer">Footer</div>
+    </div>
+
 </body>
 </html>
