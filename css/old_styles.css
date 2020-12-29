@@ -1,0 +1,205 @@
+/*  ---------main content text adventure -----------  */
+
+/* navigation menu */
+nav{
+  float: right;
+  padding-right: 2%;
+  
+  
+}
+ul.navigation{
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: right;
+  }
+
+.navigation a:link, .navigation a:visited{
+  color: white;
+  text-decoration: none;
+  cursor: auto;
+}
+
+
+.navigation a:hover{
+  background-color: rgb(201, 97, 18);
+  color: black;
+}
+
+
+.navigation #hiddenLinks {
+  display: none;
+  text-align: left;  
+}
+
+.navigation #hiddenContent-Links {
+  display: none;
+  text-align: left;  
+}
+
+.navigation #hiddenButtons {
+  display: none;
+  text-align: center;
+}
+
+/* Settings Text Adventure buttons*/
+
+#settings {
+  text-align: center;  
+}
+
+
+
+/*css .grid-container general */
+.grid-container {
+display: grid;
+grid-gap: 10px;
+background-color: rgb(201, 97, 18);
+padding: 10px;
+height: 100vh;
+width: 100vw;
+}
+
+.grid-container > div {
+	background-color: black;
+	text-align: center;
+	font-size: large;
+	font-family: Arial;
+	color: white;	
+  }
+
+  /* css grid layout Text adventure page */
+  #adventure-layout {grid-template-areas:
+    'menu header header header header header'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main' 
+    'main main main main main main'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+  }
+/* css grid layout on about page */
+
+#documentation-layout {
+    grid-template-areas:
+      'content-links header header header header header'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'content content content content content content'
+      'footer footer footer footer footer footer';
+    }
+  
+/* css grid layout on What's new page */
+#blog-layout {
+  grid-template-areas: 
+  'header header header header header header'
+  'welcome welcome welcome welcome welcome welcome'
+  'welcome welcome welcome welcome welcome welcome'
+  'welcome welcome welcome welcome welcome welcome'
+  'welcome welcome welcome welcome welcome welcome'
+  'news news news news news news'
+  'news news news news news news'
+  'news news news news news news'
+  'news news news news news news'
+  'release release release release release release'
+  'release release release release release release'
+  'release release release release release release'
+  'release release release release release release'
+  'footer footer footer footer footer footer'
+  ;
+}
+
+.grid-container .welcome, .grid-container .release {
+  background-color: rgb(201, 97, 18);
+}
+
+/* css grid item */
+.header { grid-area: header;}
+.menu {grid-area: menu;}
+.main { grid-area: main; }
+.content-links {grid-area: content-links;}
+.content{grid-area: content;}
+.welcome{grid-area: welcome;}
+.news{grid-area: news;}
+.release{grid-area: release;}
+.consoleOut { grid-area: output; }
+.consoleIn {grid-area: input;}
+.footer { grid-area: footer;}
+
+li.bullet-list{
+  padding-left: 10%;
+}
+
+/* @media for desktop and tablet users */
+@media only screen and (min-width: 768px) {
+  ul.navigation #hiddenLinks{
+    display: block;    
+    }
+
+  li.navigation  {
+    float: left;    
+  }
+
+ li a {
+  padding: 15px 20px; 
+  display: block; 
+  } 
+
+
+  .navigation #hiddenButtons{
+    display: block;
+  }
+
+/* .content-links About page */
+div.content-links ul.navigation li{
+  float: none;
+  
+}
+
+  /*css .grid-container for Texxt Adventure*/
+#adventure-layout {
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main main main main main'
+    'menu main main main main main'
+    'menu main main main main main'
+    'menu main main main main main' 
+    'menu main main main main main'
+    'menu main main main main main'
+    'footer footer footer footer footer footer';  
+  }
+
+  #documentation-layout{
+    grid-template-areas: 
+    'header header header header header header'
+      'content-links content content content content content'
+      'content-links content content content content content'
+      'content-links content content content content content'
+      'content-links content content content content content'
+      'content-links content content content content content'
+      'footer footer footer footer footer footer';
+  }
+
+  .bullet-list {
+    padding-left: 30%;
+  }
+  .icon {
+    display: none;
+  }
+}
+  
+
