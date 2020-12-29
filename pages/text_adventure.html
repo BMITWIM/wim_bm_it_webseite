@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive Text Adventure "> 
+  <meta name="author" content="Melissa Wilkins "> 
+  <meta name="robots" content="index, follow">
+  <!-- end meta Tags -->
+  <!-- link  -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="manifest" href="/manifest.json">
+  <script src="js/programm.js"></script>
+  <!-- icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- end link -->
+
+  <title>wim - Text Adventure</title>
+</head>
+
+<body onload="displayGreeting()">
+ 
+    <div class="grid-container" id="adventure-layout">
+      <header>
+          <!-- navigation -->
+          <nav>
+            <ul class="navigation">  
+              <li class="navigation">
+                <a href="javascript:void(0);" class="icon" onclick="btnHamburger()">
+                <i class="fa fa-bars"></i>
+                </a>
+              </li>
+              <li id="hiddenLinks">
+                <ul>
+                  <li><a href="../index.html">Welcome</a></li>
+                  <li><a href="./text_adventure.html">Text Adventure<a></li>
+                  <li><a href="./about.html">About</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </header>           
+      <aside class="menu">
+          <ul class="navigation" id="toolbar">  
+            <li>
+              <a href="javascript:void(0);" class="icon" onclick="btnSettings()">
+              <i class="fa fa-cog"></i>
+              </a>
+            </li>
+            <li id="hiddenButtons">
+              <ul>
+                <li><button id="newGame">New Game</button></li>
+                <li><button id="save">Save</button></li>
+                <li><button id="options">Options</button></li>
+                <li><button id="help">Help</button></li>
+              </ul>
+          </li>
+          </ul>
+        </aside>      
+        <main>          
+          <section>
+            <h2> Main </h2>
+            <p id="greeting"></p>
+          </section>
+          <section class="consoleOut">
+            Output
+          </section>
+          <section class="consoleIn">
+            Input
+          </section>
+        </main>
+        <footer>
+          Footer
+        </footer>
+    </div>
+</body>
+</html>
