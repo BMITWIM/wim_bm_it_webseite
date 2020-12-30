@@ -1,0 +1,79 @@
+div.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    background-color: rgb(201, 97, 18);
+    padding: 10px;
+    height: 100vh;
+    width: 100vw;
+}
+
+header, main, aside, footer {
+    background-color: black;
+    color: white;
+}
+
+/* css grid adventure-layout */
+#adventure-layout {
+    grid-template-areas:
+    'aside header header header header header' 
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+}
+
+/* css grid documentation layout */
+#documentation-layout {
+        grid-template-areas:
+        'aside header header header header header' 
+        'main main main main main main'
+        'main main main main main main'
+        'main main main main main main'
+        'main main main main main main'
+        'footer footer footer footer footer footer';    
+}
+
+/* css grid blog layout */
+#blog-layout {
+    grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+}
+
+header {grid-area: header;}
+main {grid-area: main;}
+aside {grid-area: aside;}
+footer {grid-area: footer;}
+
+/* Navigation */
+.navigation {
+    list-style-type: none;
+}
+
+.navigation a:link, .navigation a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: rgb(201, 97, 18);
+    color: black;
+}
+
+.navigation #hiddenLinks {
+    display: none;
+}
+
+.navigation #hiddenButtons {
+    display: none;
+}
+
+/* text struktur */
+h1, h2, p, ul, li {
+    margin-left: 2em;
+}

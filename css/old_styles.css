@@ -3,10 +3,9 @@
 /* navigation menu */
 nav{
   float: right;
-  padding-right: 2%;
-  
-  
+  padding-right: 2%;   
 }
+
 ul.navigation{
   color: white;
   list-style-type: none;
@@ -14,7 +13,7 @@ ul.navigation{
   padding: 0;
   overflow: hidden;
   text-align: right;
-  }
+}
 
 .navigation a:link, .navigation a:visited{
   color: white;
@@ -22,12 +21,10 @@ ul.navigation{
   cursor: auto;
 }
 
-
 .navigation a:hover{
   background-color: rgb(201, 97, 18);
   color: black;
 }
-
 
 .navigation #hiddenLinks {
   display: none;
@@ -45,12 +42,9 @@ ul.navigation{
 }
 
 /* Settings Text Adventure buttons*/
-
 #settings {
   text-align: center;  
 }
-
-
 
 /*css .grid-container general */
 .grid-container {

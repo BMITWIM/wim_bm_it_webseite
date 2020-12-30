@@ -1,76 +1,76 @@
 /* reset general*/
-
 html, head, body, h1, h2, h3, p, ul, li {
     margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-      }
-    /*reset navigation  */
-    nav {
-      display: block;
-    }
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/*reset navigation  */
+nav {
+    display: block;
+}
   
-    ul {
-      display: block;
-      list-style-type: disc;
-      margin-top: 1em;
-      margin-bottom: 1 em;
-      margin-left: 0;
-      margin-right: 0;
-      padding-left: 0;
-      text-align: left;
-    }
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    text-align: left;
+}
   
-  a:link, a:visited{
+a:link, a:visited{
     color: (internal value);
     text-decoration: underline;
     cursor: pointer;
-  }
+}
+
   /* reset headings h1-h4 */
-      h1 {
-        display: block;
-        font-size: 2em;
-        margin-top: 0.67em;
-        margin-bottom: 0.67em;
-        margin-left: 0;
-        margin-right: 0;
-        font-weight: bold;
-      }
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
   
-      h2 {
-        display: block;
-        font-size: 1.5em;
-        margin-top: 0.83em;
-        margin-bottom: 0.83em;
-        margin-left: 0;
-        margin-right: 0;
-        font-weight: bold;
-      }
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
   
-      h3 {
-        display: block;
-        font-size: 1.17em;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        margin-left: 0;
-        margin-right: 0;
-        font-weight: bold;
-      }
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
   
-      h4 {
-        display: block;
-        font-size: 1em;
-        margin-top: 1.33em;
-        margin-bottom: 1.33em;
-        margin-left: 0;
-        margin-right: 0;
-        font-weight: bold;
-      }
+h4 {
+    display: block;
+    font-size: 1em;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
   
-      * {
-          box-sizing: border-box;
-        }
+* {
+    box-sizing: border-box;
+}
   
