@@ -21,23 +21,4 @@ function btnHamburger() {
     }
  }
 
- /* function btnSettings(){
-   var x = document.getElementById("hiddenButtons");
-   if (x.style.display === "block") {
-    x.style.display = "none";
-    
-  } else {
-    x.style.display = "block";
-  }
- } */
-
- /* function btnLinks() {
-  var x = document.getElementById("hiddenContent-Links");   
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    
-  } else {
-    x.style.display = "block";
-  }
- } */
 
