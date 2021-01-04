@@ -4,5 +4,7 @@ $(document).ready(function(){
     $("i#hamburger").click(function(){
         $("li#hiddenLinks").toggle();
       });
-  
+    $("i#toolbar").click(function(){
+        $("li#hiddenButtons").toggle();
+    })  
   });
