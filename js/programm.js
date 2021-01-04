@@ -21,7 +21,7 @@ function btnHamburger() {
     }
  }
 
- function btnSettings(){
+ /* function btnSettings(){
    var x = document.getElementById("hiddenButtons");
    if (x.style.display === "block") {
     x.style.display = "none";
@@ -29,9 +29,9 @@ function btnHamburger() {
   } else {
     x.style.display = "block";
   }
- }
+ } */
 
- function btnLinks() {
+ /* function btnLinks() {
   var x = document.getElementById("hiddenContent-Links");   
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -39,5 +39,5 @@ function btnHamburger() {
   } else {
     x.style.display = "block";
   }
- }
+ } */
 

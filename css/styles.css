@@ -51,6 +51,10 @@ aside {grid-area: aside;}
 footer {grid-area: footer;}
 
 /* Navigation */
+nav#main-navigation{
+    float: right;
+    padding: 2rem;
+}
 .navigation {
     list-style-type: none;
 }
@@ -73,7 +77,33 @@ footer {grid-area: footer;}
     display: none;
 }
 
+li.navigation {
+    float: right;
+}
+
 /* text struktur */
 h1, h2, p, ul, li {
-    margin-left: 2em;
+    margin-left: 2rem;
 }
+
+/* @media for desktop and tablet users */
+@media only screen and (min-width: 768px) {
+    ul.navigation #hiddenLinks{
+        display: block;               
+        }
+
+    li.navigation .icon {
+        display: none;
+    }
+
+    li a {
+        padding: 15px 20px; 
+        display: block;
+        } 
+    ul#flex-box {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+} 

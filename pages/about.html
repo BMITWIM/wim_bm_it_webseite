@@ -11,10 +11,13 @@
   <!-- link  -->
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/styles.css">
-  <link rel="manifest" href="manifest.json">
-  <script src="js/programm.js"></script>
+  <link rel="manifest" href="../manifest.json">
+  <script src="../js/programm.js"></script>
   <!-- icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- import jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../js/jquery.js"></script>
   <!-- end link -->
 
   <title>wim - About</title>
@@ -22,15 +25,15 @@
 <body>
   <div class="grid-container" id="documentation-layout">
     <header>
-      <nav>
+      <nav id="main-navigation">
         <ul class="navigation">  
           <li>
             <a href="javascript:void(0);" class="icon" onclick="btnHamburger()">
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars" id="hamburger"></i>
             </a>
           </li>
           <li id="hiddenLinks">
-            <ul class="navigation">
+            <ul id="flex-box" class="navigation">
               <li><a href="../index.html">Welcome</a></li>
               <li><a href="./text_adventure.html">Text Adventure<a></li>
               <li><a href="./about.html">About</a></li>
