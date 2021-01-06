@@ -74,6 +74,6 @@ footer {grid-area: footer;}
 }
 
 /* text struktur */
-h1, h2, p, ul, li {
-    margin-left: 2em;
+h1, h2, p, ul {
+    margin-left: 2rem;
 }
